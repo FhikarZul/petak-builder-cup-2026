@@ -17,6 +17,10 @@ restrict those licenses.
   upstream variable font. Treat that as a modification; retain this notice
   and verify the exact source, generation record, and any upstream notice
   obligations before further distribution.
+- Expo's dependency graph also includes `@expo-google-fonts/material-symbols` version
+  0.4.49 transitively. That package reports `MIT AND Apache-2.0` and includes
+  separate wrapper and font license files. Its font material may be included
+  in an Expo export; review the final distributed bundle's font notices.
 
 ## Pixelify Sans
 

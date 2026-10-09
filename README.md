@@ -21,12 +21,14 @@ Use Node 22.20.0 and pnpm 11.22.0. From the repository root:
 
 The build/export step does not require production credentials. Running the full app requires your own compatible API and Supabase project. Set only public client values from `.env.example`; Expo embeds `EXPO_PUBLIC_*` values in the app bundle. Never put a server key there.
 
-The checked-in app identity is a demonstration placeholder. Replace the bundle identifiers, URL scheme, and signing configuration for any distribution build. The brand artwork also needs a publication rights review.
+The checked-in app identity is a demonstration placeholder. Replace the bundle identifiers, URL scheme, and signing configuration for any distribution build. Ownership and publication rights for the selected artwork still need review.
 
 ## Try the separate Vertex example
 
 See `examples/vertex-ai-demo/README.md`. Its `/generate` endpoint takes a short text request and calls a Gemini model through Vertex AI. It deliberately does not claim to serve the Petak mobile API.
 
-## Publication status
+## Licensing
 
-This local preparation has not been published. `LICENSE` is pending rights-holder review and currently grants no reuse rights. Do not publish until the license, artwork rights, credentials scan, and end-to-end demo endpoint are approved.
+This repository is public for Builder Cup evaluation. Public access does not make all its contents open source. The Petak mobile client and supporting source have a [limited evaluation license](apps/app/LICENSE); [Petak brand assets](packages/assets/README-LICENSE.md) remain proprietary. Among Petak-authored code, only the [standalone Vertex AI example](examples/vertex-ai-demo/LICENSE) is Apache-2.0 licensed. Third-party components retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md) and the [root licensing overview](LICENSE).
+
+The code and asset rights review, as well as approval of the end-to-end demo endpoint, remain open before submission. No production backend or AI internals are included here.

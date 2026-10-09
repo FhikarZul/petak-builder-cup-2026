@@ -1,3 +1,16 @@
-License pending review. No permission to use, copy, modify, or distribute this
-repository is granted by this file. The repository must not be published until
-the rights holder approves a license and the asset rights are confirmed.
+Petak Builder Cup 2026 — licensing overview
+
+This public repository contains material governed by different terms. It is
+not licensed as a whole under MIT, Apache License 2.0, or another open-source
+license. Public access does not grant general commercial reuse rights.
+
+- Petak-authored application source and supporting material identified in
+  apps/app/LICENSE are available only under that limited evaluation license.
+- Petak trademarks, logos, characters, illustrations, sprites, icons, and
+  other brand artwork remain proprietary. See packages/assets/README-LICENSE.md.
+- The standalone example in examples/vertex-ai-demo is licensed under Apache
+  License 2.0 only as specified in examples/vertex-ai-demo/LICENSE.
+- Third-party code, fonts, and other components retain their own licenses.
+  See THIRD_PARTY_NOTICES.md and third_party_licenses/.
+
+Any rights not expressly granted by the applicable terms are reserved.

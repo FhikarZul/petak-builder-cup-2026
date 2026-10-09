@@ -1,0 +1,30 @@
+Petak Mobile Application — Limited Evaluation License
+
+Copyright © 2026 Petak Pte. Ltd.
+
+Scope. These terms apply to Petak-authored material in apps/app,
+packages/config, packages/design-system, docs, tools, .github, and the root
+workspace files, except material expressly covered by another notice or
+third-party license. Petak brand assets and the standalone Vertex AI example
+are excluded; see the root LICENSE.
+
+Permission. You may view, download, clone, and inspect the covered source;
+build, execute, and test it; and make local technical changes reasonably
+necessary to do so, solely to evaluate Petak for the Google Cloud AI Builder
+Cup 2026. You may use GitHub's normal repository functions and share copies
+with the competition's organizers and judges as reasonably necessary for that
+evaluation. Participation in a competition with prizes or publicity does not
+by itself fall outside this permission.
+
+Restrictions. Without prior written permission from Petak Pte. Ltd., you may
+not use the covered material commercially or in production; sell it;
+sublicense it; redistribute it beyond the GitHub and review uses above;
+incorporate it into another commercial product; or create a commercial
+derivative product. This license grants no rights to Petak trademarks or brand
+assets and no patent license. All rights not expressly granted are reserved.
+
+Third-party components remain under their own licenses, which these terms do
+not replace or restrict. See the root LICENSE and THIRD_PARTY_NOTICES.md.
+
+This is a source-available evaluation license, not an OSI-approved
+open-source license.

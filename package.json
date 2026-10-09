@@ -1,0 +1,12 @@
+{
+  "name": "petak-builder-cup-2026",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "typecheck": "pnpm --filter @petak/app typecheck",
+    "test": "pnpm --filter @petak/app test && pnpm --filter @petak/vertex-ai-demo test",
+    "export": "pnpm --filter @petak/app build",
+    "scan": "node tools/public-scan.mjs"
+  }
+}

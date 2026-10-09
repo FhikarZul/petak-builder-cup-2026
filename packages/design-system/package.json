@@ -1,0 +1,9 @@
+{
+  "name": "@petak/design-system",
+  "version": "0.0.0-public",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tokens": "./src/tokens.ts"
+  }
+}

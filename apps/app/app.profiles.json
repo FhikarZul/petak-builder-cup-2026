@@ -1,0 +1,18 @@
+{
+  "qa": {
+    "env": "qa",
+    "name": "Petak Builder Cup Demo",
+    "slug": "petak-builder-cup-2026",
+    "scheme": "petak-builder-cup",
+    "iosBundleIdentifier": "com.example.petakbuildercup2026.ios",
+    "androidPackage": "com.example.petakbuildercup2026.android"
+  },
+  "prod": {
+    "env": "prod",
+    "name": "Petak Builder Cup Demo",
+    "slug": "petak-builder-cup-2026",
+    "scheme": "petak-builder-cup",
+    "iosBundleIdentifier": "com.example.petakbuildercup2026.ios",
+    "androidPackage": "com.example.petakbuildercup2026.android"
+  }
+}

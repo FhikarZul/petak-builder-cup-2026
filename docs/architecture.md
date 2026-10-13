@@ -97,4 +97,4 @@ flowchart LR
   Demo -.->|independent demonstration| Vertex["Vertex AI"]
 ```
 
-The example is **representative of one Google Cloud integration pattern**. It is not connected to the mobile app and does not implement Petak's private orchestration. An authorized deployed backend is required for end-to-end product evaluation. See [private backend components](proprietary-components.md) and the [judge demo flow](demo-flow.md).
+The example is **representative of one Google Cloud integration pattern**. It is not connected to the mobile app and does not implement Petak's private orchestration. An authorized deployed backend is required for end-to-end product evaluation. See [private backend components](proprietary-components.md) and the [product demo walkthrough](demo-flow.md).

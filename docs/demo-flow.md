@@ -1,11 +1,11 @@
-# Judge demo flow
+# Product demo walkthrough
 
-The end-to-end evaluation path uses an **authorized Petak app build**, a deployed Petak backend, and a dedicated test account. The repository provides buildable client source but does not publish backend credentials or the private `/v1` service. The submission must provide judges with the app access link and test-account instructions through the organizer's access channel before evaluation.
+This walkthrough follows the product paths in [slides 4 and 5](visuals/README.md). It requires an authorized Petak build connected to the private backend and a test account. The public repository provides the mobile client source, but it does not include a live demo account or backend credentials.
 
-1. **Open and sign in.** Install or open the supplied build and sign in with the dedicated test account. Confirm that the conversation/feed loads.
-2. **Send a message.** Enter a short non-personal message. Observe the sent item and the AI-assisted conversation result.
-3. **Capture a photo.** Use a prepared non-personal sample image. Observe upload, capture progress, and the resulting conversation or organized record.
-4. **Inspect the technical path.** Match the app's `/v1` calls and event refresh to the [client API contract](api-contract.md), [architecture](architecture.md), and [slide 7](visuals/builder-cup-slide-7.png): mobile app → Cloudflare API proxy → Cloud Run API service → durable job state → Cloud Run execution service → approved model provider → API result/event → mobile app. Photo bytes use a separate signed upload to R2.
-5. **Inspect the independent example.** Review or run the [standalone Vertex AI example](../examples/vertex-ai-demo/README.md) in an authorized Google Cloud project to see a minimal Cloud Run-to-Vertex request. Its output is separate from the Petak product flow.
+1. **Start a conversation.** Sign in and open the main conversation with Ollie.
+2. **Capture once.** Share a non-personal sample receipt or meal photo with a short caption. Watch the capture progress and the reply. A suitable food receipt can give Penny spending context and Milo nutrition context; the outcome depends on what the image contains and what the user confirms.
+3. **Review the record.** Open the relevant conversation or dashboard to see what was saved. If the app asks for clarification, answer it before treating the result as a record.
+4. **Ask in your own words.** Ask a question about the saved information, such as “How much did I spend today?” or correct a detail in the conversation. Observe how the reply uses the current records.
+5. **See progress over time.** Explore the spending or nutrition view after records have been saved. Other available conversations and views can be explored from the same app.
 
-Expected result: the test account can complete the message and photo paths end to end through the authorized backend. The public repo alone can be built and exported, but cannot provide that live result without the deployed private service. Judge access and the sample image must be checked before submission.
+The exact screens and results depend on the test account's data and the sample image. For the system path behind these actions, see the [architecture diagram](visuals/builder-cup-slide-7.png), [architecture notes](architecture.md), and [client API contract](api-contract.md). The [standalone Vertex AI example](../examples/vertex-ai-demo/README.md) is a separate technical demonstration, not part of this app walkthrough.

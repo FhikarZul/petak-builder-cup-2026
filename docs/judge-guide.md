@@ -4,7 +4,7 @@ Petak is an Expo / React Native app that turns messages and photos into conversa
 
 ## Access the app
 
-An existing QA reviewer account has prepared Penny spending history, Mira journal entries, and Ollie tasks. Use that account and the Petak QA build supplied through the submission's private access instructions; those instructions provide the sign-in method and credentials. The build must be connected to the private Petak API and Supabase project. This public repository does not publish credentials or a substitute for the `/v1` API. Use sample photos without personal information.
+An existing QA reviewer account has prepared Penny spending history, Mira journal entries, and Ollie tasks. Judges do not need to seed the account. Use that account and the Petak QA build supplied through the submission's private access instructions; those instructions provide the sign-in method and credentials. The account is shared, so changes may be visible to other judges. The build must be connected to the private Petak API and Supabase project. This public repository does not publish credentials or a substitute for the `/v1` API. Use sample photos without personal information.
 
 ## Try the product
 

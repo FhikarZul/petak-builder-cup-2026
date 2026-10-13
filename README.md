@@ -4,9 +4,9 @@ Petak is a mobile companion for turning everyday messages and photos into useful
 
 This is Petak's public submission repository for the **Google Cloud AI Builder Cup 2026**. It contains a real Expo / React Native mobile client, the small workspace packages it needs, client-visible API contracts, and a separately written Cloud Run / Vertex AI example. Petak is an existing product; its API service, execution service, AI workflows, prompts, database, and deployment configuration remain private.
 
-![Petak introduction: Everything, in its petak.](docs/visuals/petak-introduction.svg)
+![Petak's specialist neighbours in the Builder Cup presentation](docs/visuals/builder-cup-slide-2.png)
 
-For a quick visual overview, see the [product flow slide](docs/visuals/product-flow.svg) and the [two selected business-card slides from the source presentation](docs/visuals/README.md#selected-business-card-slides). These submission visuals are explanatory; the architecture and demo instructions below provide the implementation detail.
+The [selected Builder Cup slides](docs/visuals/README.md) introduce Petak's specialists, features, and conceptual product flow. The architecture and demo instructions below provide the implementation detail.
 
 ## How the product works
 

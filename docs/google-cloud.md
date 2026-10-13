@@ -1,6 +1,6 @@
 # Google Cloud in Petak
 
-The Petak mobile app reaches the **Petak API service on Cloud Run through a Cloudflare Worker/API proxy**, as shown on [slide 7](visuals/builder-cup-slide-7.png). The API service owns the client-facing `/v1` interface, durable state in Supabase/PostgreSQL, and result/event delivery. A **separate execution service on Cloud Run** handles AI work and can call **Gemini through Vertex AI** alongside other approved providers. Photo bytes go directly to Cloudflare R2 through signed upload URLs. Both Petak services and their configuration remain private; the public repository contains the caller and an independent example.
+The Petak mobile app reaches the **Petak API service on Cloud Run through a Cloudflare Worker/API proxy**, as shown on [slide 7](visuals/builder-cup-slide-7.png). The API service owns the client-facing `/v1` interface, durable state in Supabase/PostgreSQL, and result/event delivery. A **separate execution service on Cloud Run** handles AI work through provider adapters. The deck's technology stack names **Gemini and Qwen / DashScope**; Gemini can be called through Vertex AI. Photo bytes go directly to Cloudflare R2 through signed upload URLs. Both Petak services and their configuration remain private; the public repository contains the caller and an independent example.
 
 | Google Cloud component | Role in the product |
 |---|---|
@@ -12,7 +12,7 @@ Separating the API and execution service keeps the client contract distinct from
 
 ## What the public example proves
 
-[`examples/vertex-ai-demo`](../examples/vertex-ai-demo/README.md) is a standalone HTTP service with `GET /health` and `POST /generate`. Its code obtains an access token through Google Application Default Credentials, sends a text request to Vertex AI's `generateContent` endpoint, and returns the text candidate. Its Dockerfile makes the example suitable for Cloud Run. It illustrates the authenticated **Cloud Run → Vertex AI** call in code that a reviewer can inspect.
+[`examples/vertex-ai-demo`](../examples/vertex-ai-demo/README.md) is a standalone HTTP service with `GET /health` and `POST /generate`. Its code obtains an access token through Google Application Default Credentials, sends a text request to Vertex AI's `generateContent` endpoint, and returns the text candidate. Its Dockerfile makes the example suitable for Cloud Run. It illustrates an authenticated **service → Vertex AI** call; the example's presence in this repository does not establish that it has been deployed.
 
 The example does **not** serve the mobile app's `/v1` routes, reproduce Petak prompts or orchestration, persist product data, or establish the product's full provider policy or deployment settings. It is representative integration material, not the private Petak backend. The presentation describes restricted QA; it does not establish a production rollout.
 

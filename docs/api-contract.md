@@ -43,7 +43,7 @@ The client-visible capture progress contract in [`@petak/config`](../packages/co
 {"photo_id":"<photo id>","stage":"reading","observed_at":"2026-01-01T00:00:00.000Z"}
 ```
 
-The progress type lists all accepted stage names. The public package also contains narrow extraction labels and a currency display hint; it does not expose extraction prompts or backend workflow rules.
+The progress type lists the stage names recognized by this client. The public package also contains narrow extraction labels and a currency display hint; it does not expose extraction prompts or backend workflow rules.
 
 ## Asynchronous updates and errors
 

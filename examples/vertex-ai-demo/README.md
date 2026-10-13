@@ -1,6 +1,6 @@
 # Standalone Vertex AI / Gemini example
 
-This is a newly written demonstration service, independent of Petak's production backend. `POST /generate` accepts `{ "text": "Hello" }` and returns `{ "text": "..." }`. `GET /health` is a simple health check. It does not expose Petak prompts or implement Petak's mobile API.
+This is a newly written demonstration service, independent of Petak's private backend. `POST /generate` accepts `{ "text": "Hello" }` and returns `{ "text": "..." }`. `GET /health` is a simple health check. It does not expose Petak prompts or implement Petak's mobile API.
 
 The [Apache License 2.0](LICENSE) applies only to this standalone example. It does not license the Petak mobile application, Petak brand assets, or other proprietary components; see the [root licensing overview](../../LICENSE).
 

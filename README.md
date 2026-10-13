@@ -38,12 +38,12 @@ pnpm export
 
 ## Evaluate the submission
 
-Follow the [product demo walkthrough](docs/demo-flow.md) with an authorized app build, backend, and test account. Capture a photo, review the saved information, ask about it, and explore the relevant dashboard. The [standalone Vertex AI example](examples/vertex-ai-demo/README.md) can be run separately in an authorized Google Cloud project to inspect the basic Cloud Run-to-Vertex call; it is not the Petak API.
+Start with the [judge guide](docs/judge-guide.md) for app access, a product walkthrough, and the public source checks. The [standalone Vertex AI example](examples/vertex-ai-demo/README.md) can be run separately in an authorized Google Cloud project to inspect the basic service-to-Vertex call; it is not the Petak API.
 
 ## Read more
 
 - [System architecture](docs/architecture.md) · [Google Cloud integration](docs/google-cloud.md) · [Client API contract](docs/api-contract.md)
-- [Product demo walkthrough](docs/demo-flow.md) · [Private backend components](docs/proprietary-components.md)
+- [Judge guide](docs/judge-guide.md) · [Product demo walkthrough](docs/demo-flow.md) · [Private backend components](docs/proprietary-components.md)
 - [Licensing overview](LICENSE) · [Mobile and supporting source terms](apps/app/LICENSE) · [Brand asset notice](packages/assets/README-LICENSE.md) · [Standalone example license](examples/vertex-ai-demo/LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 This repository is public for evaluation, but **public does not mean fully open source**. The app and supporting Petak source are under limited evaluation terms; Petak brand assets remain proprietary; the standalone Vertex AI example is Apache-2.0 licensed separately. Third-party materials retain their original licenses. Asset publication rights and judge access details require final confirmation before submission.

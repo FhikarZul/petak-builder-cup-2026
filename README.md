@@ -6,11 +6,11 @@ This is Petak's public submission repository for the **Google Cloud AI Builder C
 
 ![Petak's specialist neighbours in the Builder Cup presentation](docs/visuals/builder-cup-slide-2.png)
 
-The [selected Builder Cup slides](docs/visuals/README.md) introduce Petak's specialists, features, and conceptual product flow. The architecture and demo instructions below provide the implementation detail.
+The [selected Builder Cup slides](docs/visuals/README.md) introduce Petak's specialists, features, product flow, and [slide 7 architecture diagram](docs/visuals/builder-cup-slide-7.png). The architecture and demo instructions below explain the integration boundaries.
 
 ## How the product works
 
-The mobile app authenticates with Supabase and calls the private Petak API service on Google Cloud Run. A separate Cloud Run execution service performs AI work using Gemini through Vertex AI. The API returns results to the app through normal reads and a server-sent event stream. The app **does not call Vertex AI directly**. See the [architecture](docs/architecture.md) and [Google Cloud integration](docs/google-cloud.md) for the component and request flows.
+The mobile app authenticates with Supabase and reaches the private Petak API on Cloud Run through a Cloudflare API proxy. The API owns client requests and durable records in Supabase/PostgreSQL; a separate Cloud Run execution service performs AI work with approved providers, including Gemini through Vertex AI. Photo bytes upload directly to R2 using an API-issued temporary URL. The API returns results through reads and a server-sent event stream. The app **does not call model providers directly**. This describes the restricted QA architecture in the presentation; production rollout is not established. See the [architecture](docs/architecture.md) and [Google Cloud integration](docs/google-cloud.md) for the component and request flows.
 
 ## Repository contents
 
@@ -21,7 +21,7 @@ The mobile app authenticates with Supabase and calls the private Petak API servi
 | [`examples/vertex-ai-demo`](examples/vertex-ai-demo/README.md) | Independent Cloud Run example calling Gemini on Vertex AI |
 | [`docs`](docs/architecture.md) | Architecture, Google Cloud role, client API contract, demo path, and private boundary |
 
-The public repository is buildable as a client workspace. It does not contain the production backend or a replacement for the app's `/v1` API. End-to-end use requires an authorized Petak backend and test account; the [judge demo flow](docs/demo-flow.md) describes the required evaluation path.
+The public repository is buildable as a client workspace. It does not contain the private backend or a replacement for the app's `/v1` API. End-to-end use requires an authorized Petak backend and test account; the [judge demo flow](docs/demo-flow.md) describes the required evaluation path.
 
 ## Build the mobile app
 
@@ -43,7 +43,7 @@ Follow the [judge demo flow](docs/demo-flow.md) with the authorized app build, b
 ## Read more
 
 - [System architecture](docs/architecture.md) · [Google Cloud integration](docs/google-cloud.md) · [Client API contract](docs/api-contract.md)
-- [Judge demo flow](docs/demo-flow.md) · [Private production components](docs/proprietary-components.md)
+- [Judge demo flow](docs/demo-flow.md) · [Private backend components](docs/proprietary-components.md)
 - [Licensing overview](LICENSE) · [Mobile and supporting source terms](apps/app/LICENSE) · [Brand asset notice](packages/assets/README-LICENSE.md) · [Standalone example license](examples/vertex-ai-demo/LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 This repository is public for evaluation, but **public does not mean fully open source**. The app and supporting Petak source are under limited evaluation terms; Petak brand assets remain proprietary; the standalone Vertex AI example is Apache-2.0 licensed separately. Third-party materials retain their original licenses. Asset publication rights and judge access details require final confirmation before submission.

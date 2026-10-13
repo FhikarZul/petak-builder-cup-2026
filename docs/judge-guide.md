@@ -4,15 +4,16 @@ Petak is an Expo / React Native app that turns messages and photos into conversa
 
 ## Access the app
 
-Use the Petak QA build and test account supplied through the submission's access instructions. The build must be connected to the private Petak API and Supabase project. This repository does not contain a live account, backend credentials, or a substitute for the `/v1` API. Use sample photos without personal information.
+An existing QA reviewer account has prepared Penny spending history, Mira journal entries, and Ollie tasks. Use that account and the Petak QA build supplied through the submission's private access instructions; those instructions provide the sign-in method and credentials. The build must be connected to the private Petak API and Supabase project. This public repository does not publish credentials or a substitute for the `/v1` API. Use sample photos without personal information.
 
 ## Try the product
 
-1. **Open Ollie.** Sign in and open the main conversation. Ollie routes a message or photo to the relevant neighbour.
-2. **Share a food receipt.** Send a sample receipt with a short caption. In the presentation's example, one receipt contributes to Penny's spending record and Milo's nutrition record.
-3. **Check spending and meals.** Read Penny's and Milo's responses. If Petak asks for clarification, answer it; if a detail is wrong, correct it in the conversation. Check what was saved before treating a response as a record.
-4. **Add a meal photo.** Send a separate meal photo with context and review Milo's response. The receipt, spending, meals, and meal photo sequence follows the presentation.
-5. **Explore the dashboards.** Open Penny's spending and Milo's nutrition views, then ask a question such as “How much did I spend today?” and compare the answer with the saved record. Mira's journal can be explored with a short, non-personal reflection if available in the supplied account.
+1. **Inspect the prepared account.** Sign in, open Ollie's conversation and tasks, then look at Penny's spending history and Mira's journal. These records are already seeded in the QA reviewer account.
+2. **Enable Milo if needed.** Milo is available to invite in the prepared account. Open **Your neighbours** and invite him before trying the nutrition path if he is not active.
+3. **Share a food receipt.** Send a sample receipt with a short caption. In the presentation's example, one receipt contributes to Penny's spending record and Milo's nutrition record.
+4. **Check spending and meals.** Read Penny's and Milo's responses. If Petak asks for clarification, answer it; if a detail is wrong, correct it in the conversation. Check what was saved before treating a response as a record.
+5. **Add a meal photo.** Send a separate meal photo with context and review Milo's response. The receipt, spending, meals, and meal photo sequence follows the presentation.
+6. **Return to the dashboards.** Open Penny's spending and Milo's nutrition views, then ask a question such as “How much did I spend today?” and compare the answer with the saved record.
 
 The exact responses and records depend on the test account, the images, and any clarification needed. The [product walkthrough](demo-flow.md) gives the same path in shorter form; [slides 2–5](visuals/README.md) introduce the neighbours and product flow.
 

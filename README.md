@@ -6,7 +6,7 @@ This is Petak's public submission repository for the **Google Cloud AI Builder C
 
 ![Petak introduction: Everything, in its petak.](docs/visuals/petak-introduction.svg)
 
-For a quick visual overview, see the [product flow slide](docs/visuals/product-flow.svg). These [submission visuals](docs/visuals/README.md) are explanatory; the architecture and demo instructions below provide the implementation detail.
+For a quick visual overview, see the [product flow slide](docs/visuals/product-flow.svg) and the [two selected business-card slides from the source presentation](docs/visuals/README.md#selected-business-card-slides). These submission visuals are explanatory; the architecture and demo instructions below provide the implementation detail.
 
 ## How the product works
 

@@ -4,12 +4,12 @@ Petak is an Expo / React Native app that turns messages and photos into conversa
 
 ## Access the app
 
-An existing QA reviewer account has prepared Penny spending history, Mira journal entries, and Ollie tasks. Judges do not need to seed the account. Use that account and the Petak QA build supplied through the submission's private access instructions; those instructions provide the sign-in method and credentials. The account is shared, so changes may be visible to other judges. The build must be connected to the private Petak API and Supabase project. This public repository does not publish credentials or a substitute for the `/v1` API. Use sample photos without personal information.
+An existing QA reviewer account has prepared Penny spending history, Mira journal entries, Milo meal records, and Ollie tasks. Penny, Mira, and Milo are active; judges do not need to seed the account or invite a neighbour. Use that account and the Petak QA build supplied through the submission's private access instructions; those instructions provide the sign-in method and credentials. The account is shared, so changes may be visible to other judges. The build must be connected to the private Petak API and Supabase project. This public repository does not publish credentials or a substitute for the `/v1` API. Use sample photos without personal information.
 
 ## Try the product
 
-1. **Inspect the prepared account.** Sign in, open Ollie's conversation and tasks, then look at Penny's spending history and Mira's journal. These records are already seeded in the QA reviewer account.
-2. **Enable Milo if needed.** Milo is available to invite in the prepared account. Open **Your neighbours** and invite him before trying the nutrition path if he is not active.
+1. **Inspect the prepared account.** Sign in, open Ollie's conversation and tasks, then look at Penny's spending history, Mira's journal, and Milo's food log. These records are already present in the QA reviewer account.
+2. **Compare one shared moment.** Find the Corner Bakery sandwich and coffee in Milo's food log on 4 October and Penny's S$9.60 Corner Bakery expense on the same date. This is a prepared text example with consistent date and description; it is not a linked receipt-and-plate photo pair.
 3. **Share a food receipt.** Send a sample receipt with a short caption. In the presentation's example, one receipt contributes to Penny's spending record and Milo's nutrition record.
 4. **Check spending and meals.** Read Penny's and Milo's responses. If Petak asks for clarification, answer it; if a detail is wrong, correct it in the conversation. Check what was saved before treating a response as a record.
 5. **Add a meal photo.** Send a separate meal photo with context and review Milo's response. The receipt, spending, meals, and meal photo sequence follows the presentation.

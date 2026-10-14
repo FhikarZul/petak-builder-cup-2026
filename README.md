@@ -38,7 +38,7 @@ pnpm export
 
 ## Evaluate the submission
 
-Start with the [judge guide](docs/judge-guide.md) for app access, a product walkthrough, and the public source checks. The [standalone Vertex AI example](examples/vertex-ai-demo/README.md) can be run separately in an authorized Google Cloud project to inspect the basic service-to-Vertex call; it is not the Petak API.
+Start with the editable [judge instruction slides](docs/judge-walkthrough.pptx) for a short app walkthrough, or read the [judge guide](docs/judge-guide.md) for app access and public source checks. The [standalone Vertex AI example](examples/vertex-ai-demo/README.md) can be run separately in an authorized Google Cloud project to inspect the basic service-to-Vertex call; it is not the Petak API.
 
 ## Read more
 

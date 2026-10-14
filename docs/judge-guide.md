@@ -2,6 +2,8 @@
 
 Petak is an Expo / React Native app that turns messages and photos into conversations and saved records with specialist neighbours. This guide covers the product walkthrough and the evidence available in this public repository. The presentation describes a **restricted QA** deployment; it does not claim a production rollout.
 
+For a presentation-ready, step-by-step walkthrough, open the editable [judge instruction slides](judge-walkthrough.pptx). The slides contain no credentials; use the private access instructions supplied with the submission to sign in.
+
 ## Access the app
 
 An existing QA reviewer account has prepared Penny spending history, Mira journal entries, Milo meal records, and Ollie tasks. Penny, Mira, and Milo are active; judges do not need to seed the account or invite a neighbour. Use that account and the Petak QA build supplied through the submission's private access instructions; those instructions provide the sign-in method and credentials. The account is shared, so changes may be visible to other judges. The build must be connected to the private Petak API and Supabase project. This public repository does not publish credentials or a substitute for the `/v1` API. Use sample photos without personal information.

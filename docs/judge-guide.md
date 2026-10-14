@@ -2,7 +2,7 @@
 
 Petak is an Expo / React Native app that turns messages and photos into conversations and saved records with specialist neighbours. This guide covers the product walkthrough and the evidence available in this public repository. The presentation describes a **restricted QA** deployment; it does not claim a production rollout.
 
-For a presentation-ready user manual covering Chat, Ollie's board, specialist dashboards, the journal, photos, and settings, open the editable [judge manual slides](judge-walkthrough.pptx). This public copy contains no credentials; use the private judge copy supplied with the submission to sign in.
+An editable slide manual covering Chat, Ollie's board, specialist dashboards, the journal, and photos is supplied privately to judges with reviewer credentials. It is not published in this repository.
 
 ## Access the app
 

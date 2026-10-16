@@ -1,6 +1,6 @@
 # Selected Builder Cup slides
 
-These images are exports of slides **2–5 and 7** from the supplied `PetakAPP | AI Builder Cup.pptx`. They introduce the product and its architecture for reviewers; the repository's [architecture](../architecture.md), [API contract](../api-contract.md), and [demo flow](../demo-flow.md) explain the public client and private service boundaries.
+These images are exports of slides **2–5 and 7** from the supplied `PetakAPP | AI Builder Cup.pptx`. They introduce the product and its architecture for reviewers; the repository's [architecture](../architecture.md) and [API contract](../api-contract.md) explain the public client and private service boundaries.
 
 | Slide | What it shows | Preview |
 |---|---|---|

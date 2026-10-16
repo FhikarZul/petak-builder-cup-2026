@@ -98,4 +98,4 @@ flowchart LR
   Worker --> Internals
 ```
 
-An authorized deployed backend is required for end-to-end product evaluation. See [private backend components](proprietary-components.md) and the [product demo walkthrough](demo-flow.md).
+An authorized deployed backend is required for end-to-end product evaluation. See [private backend components](proprietary-components.md). Judge access instructions are supplied separately.

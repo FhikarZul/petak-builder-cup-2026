@@ -5,8 +5,7 @@ Copyright © 2026 Petak Pte. Ltd.
 Scope. These terms apply to Petak-authored material in apps/app,
 packages/config, packages/design-system, docs, tools, .github, and the root
 workspace files, except material expressly covered by another notice or
-third-party license. Petak brand assets and the standalone Vertex AI example
-are excluded; see the root LICENSE.
+third-party license. Petak brand assets are excluded; see the root LICENSE.
 
 Permission. You may view, download, clone, and inspect the covered source;
 build, execute, and test it; and make local technical changes reasonably

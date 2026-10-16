@@ -8,10 +8,9 @@ restrict those licenses.
 ## Material Symbols Sharp
 
 - Owner/source: Google, [Material Design Icons](https://github.com/google/material-design-icons).
-- License: Apache License 2.0. The full text is included once in
-  [the Vertex example LICENSE](examples/vertex-ai-demo/LICENSE); that text
-  also accompanies this font and does **not** make Petak application code
-  Apache-2.0 licensed.
+- License: Apache License 2.0. The full text is included in
+  [Apache-2.0.txt](third_party_licenses/Apache-2.0.txt); it accompanies this
+  font and does **not** make Petak application code Apache-2.0 licensed.
 - Local file: `apps/app/assets/fonts/MaterialSymbolsSharp-400.ttf`.
 - The app source describes this as a static 400-weight instance made from the
   upstream variable font. Treat that as a modification; retain this notice
@@ -45,9 +44,8 @@ restrict those licenses.
 The direct dependency versions in `pnpm-lock.yaml` were checked against npm
 package metadata. Expo, React, React Native, Supabase JS, TanStack Query,
 Vitest, and most other direct app packages report MIT licenses; the two
-Expo Google Fonts packages report `MIT AND OFL-1.1`. `google-auth-library`
-(used only by the Vertex example) and TypeScript report Apache-2.0. Package
-licenses remain with the packages installed by pnpm; this repository does
+Expo Google Fonts packages report `MIT AND OFL-1.1`; TypeScript reports
+Apache-2.0. Package licenses remain with the packages installed by pnpm; this repository does
 not vendor their source. A distributed native app needs a separate complete
 notice review for compiled direct and transitive dependencies.
 

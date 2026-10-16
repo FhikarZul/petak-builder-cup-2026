@@ -1,12 +1,3 @@
-Petak Vertex AI / Cloud Run example
-Copyright © 2026 Petak Pte. Ltd.
-SPDX-License-Identifier: Apache-2.0
-
-This license applies only to the Petak-authored files in this example
-directory. It does not license the Petak application, brand assets, or
-other parts of the repository. The full Apache License 2.0 follows.
-
-
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/

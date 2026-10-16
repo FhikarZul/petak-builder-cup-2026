@@ -23,7 +23,7 @@ The exact responses and records depend on the test account, the images, and any 
 
 - [Architecture](architecture.md) and [slide 7](visuals/builder-cup-slide-7.png) show the mobile app, Cloudflare proxy and R2 storage, Cloud Run API and execution worker, Supabase/PostgreSQL state, and model providers. The presentation marks some components as planned.
 - [Client API contract](api-contract.md) describes the `/v1` requests, signed photo upload, and event updates visible in the public app source.
-- [Google Cloud integration](google-cloud.md) explains the Cloud Run and Vertex AI roles. The [standalone Vertex AI example](../examples/vertex-ai-demo/README.md) is independent of the Petak app and backend.
+- [Google Cloud integration](google-cloud.md) explains the Cloud Run and Vertex AI roles.
 - [Public and private boundary](proprietary-components.md) explains which source is included and which backend components remain private.
 
 To verify the public client workspace locally, use Node **22.20.0** and pnpm **11.22.0** from the repository root:
@@ -35,4 +35,4 @@ pnpm test
 pnpm export
 ```
 
-These commands check and export the client without granting access to the live product. Interactive local use requires the authorized public client configuration described in [`.env.example`](../.env.example) and a compatible private backend. The independent Vertex AI example has its own [run instructions](../examples/vertex-ai-demo/README.md).
+These commands check and export the client without granting access to the live product. Interactive local use requires the authorized public client configuration described in [`.env.example`](../.env.example) and a compatible private backend.

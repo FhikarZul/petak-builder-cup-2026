@@ -51,4 +51,4 @@ The app opens one authenticated server-sent event stream at `GET /v1/events`. On
 
 Non-2xx API responses become client errors. When the API returns a JSON body with `error` and optionally `field`, the app uses those fields to explain a failed request. Exact error codes and every endpoint's response fields are outside this narrow client contract.
 
-The [standalone Vertex AI example](../examples/vertex-ai-demo/README.md) exposes only `/health` and `/generate`. It cannot replace the private Petak `/v1` API. End-to-end use requires an authorized compatible backend.
+End-to-end use requires an authorized compatible Petak backend; this public repository does not implement the private `/v1` API.

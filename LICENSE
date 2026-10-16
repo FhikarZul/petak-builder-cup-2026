@@ -8,8 +8,6 @@ license. Public access does not grant general commercial reuse rights.
   apps/app/LICENSE are available only under that limited evaluation license.
 - Petak trademarks, logos, characters, illustrations, sprites, icons, and
   other brand artwork remain proprietary. See packages/assets/README-LICENSE.md.
-- The standalone example in examples/vertex-ai-demo is licensed under Apache
-  License 2.0 only as specified in examples/vertex-ai-demo/LICENSE.
 - Third-party code, fonts, and other components retain their own licenses.
   See THIRD_PARTY_NOTICES.md and third_party_licenses/.
 

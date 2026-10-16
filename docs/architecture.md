@@ -12,8 +12,8 @@ Petak's mobile app turns messages and photos into conversations and organized re
 | Petak API service (Cloud Run) | Authenticated `/v1` interface, client reads and writes, and event delivery | No |
 | Supabase / PostgreSQL | Durable records, jobs, results, and access rules; the API controls application state | External service; schema and server integration private |
 | Cloudflare R2 | Photo bytes uploaded from the app through API-issued signed URLs | External service; client upload integration only |
-| Petak execution service (Cloud Run) | AI work claimed through the API, using Vercel AI SDK and provider adapters; selected adapters make bounded direct calls; returns results through the API | No |
-| Model providers: Gemini and Qwen / DashScope | Inference called by the execution service; approved Gemini routes use Vertex AI | External services; no direct app call |
+| Petak execution service (Cloud Run) | AI work claimed through the API, using Vercel AI SDK and provider adapters for bounded model calls; returns results through the API | No |
+| Model providers: Gemini and Qwen / DashScope | Inference called by the execution service | External services; no direct app call |
 
 ```mermaid
 flowchart LR
@@ -26,7 +26,7 @@ flowchart LR
     Execution["Execution service<br/>Cloud Run"]
   end
   DB["Supabase / PostgreSQL<br/>durable state and jobs"]
-  Models["Approved model providers<br/>Gemini via Vertex AI; Qwen / DashScope"]
+  Models["Model providers<br/>Gemini; Qwen / DashScope"]
   Mobile -->|sign in and session| Auth
   Mobile -->|Bearer token and /v1 requests| Proxy
   Proxy --> API
@@ -46,9 +46,9 @@ The app signs in through Supabase. Its API adapter retrieves the current session
 
 ## AI request and result flow
 
-Text and photo actions reach the API through the proxy. The API stores durable records and coordinates jobs in Supabase/PostgreSQL. Work that needs AI processing is handled asynchronously by the private TypeScript execution worker, which uses Vercel AI SDK and provider adapters. Selected adapters make bounded direct provider calls. The visible technology stack on slide 9 names Gemini and Qwen / DashScope; the private model policy determines which approved provider handles a task. The worker returns results through the API; it does not own the database. The app can receive an initial response before later AI results are available. It keeps the conversation current through `/v1/events` server-sent events and subsequent API reads. Events notify the app to refresh relevant data; they are not the sole source of record.
+Text and photo actions reach the API through the proxy. The API stores durable records and coordinates jobs in Supabase/PostgreSQL. Work that needs AI processing is handled asynchronously by the private TypeScript execution worker, which uses Vercel AI SDK and provider adapters for bounded model calls. The visible technology stack on slide 9 names Gemini and Qwen / DashScope; the private model policy determines which approved provider handles a task. The worker returns results through the API; it does not own the database. The app can receive an initial response before later AI results are available. It keeps the conversation current through `/v1/events` server-sent events and subsequent API reads. Events notify the app to refresh relevant data; they are not the sole source of record.
 
-Vertex AI serves Gemini model requests on approved routes. It does not orchestrate Petak's neighbours or replace the TypeScript worker. The current architecture does not use Google ADK or Google Managed Agent Runtime. The model-calling backend remains private.
+Slide 7 names Gemini as a model provider. Provider endpoints, model routing policy, and the model-calling backend remain private.
 
 ```mermaid
 sequenceDiagram

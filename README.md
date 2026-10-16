@@ -10,9 +10,9 @@ The [selected Builder Cup slides](docs/visuals/README.md) introduce Petak's spec
 
 ## How the product works
 
-The mobile app authenticates with Supabase and reaches the private Petak API on Cloud Run through a Cloudflare API proxy. The API owns client requests and durable records in Supabase/PostgreSQL; a separate Cloud Run execution service performs AI work with approved providers, including Gemini through Vertex AI. Photo bytes upload directly to R2 using an API-issued temporary URL. The API returns results through reads and a server-sent event stream. The app **does not call model providers directly**. This describes the restricted QA architecture in the presentation; production rollout is not established. See the [architecture](docs/architecture.md) and [Google Cloud integration](docs/google-cloud.md) for the component and request flows.
+The mobile app authenticates with Supabase and reaches the private Petak API on Cloud Run through a Cloudflare API proxy. The API owns client requests and durable records in Supabase/PostgreSQL; a separate Cloud Run execution service performs AI work using Vercel AI SDK or bounded direct provider clients, depending on the task. Approved Gemini calls use Vertex AI as a model endpoint. Photo bytes upload directly to R2 using an API-issued temporary URL. The API returns results through reads and a server-sent event stream. The app **does not call model providers directly**. This describes the restricted QA architecture in the presentation; production rollout is not established. See the [architecture](docs/architecture.md) and [Google Cloud integration](docs/google-cloud.md) for the component and request flows.
 
-**Vertex AI is a Gemini inference endpoint, not Petak's agent runtime.** The current private execution worker is TypeScript based; Petak does not use Google ADK or Google Managed Agent Runtime in this architecture. The backend implementation remains private.
+**Vercel AI SDK is used by the TypeScript worker; Vertex AI serves approved Gemini requests.** The worker also has bounded direct provider calls for some tasks. Petak does not use Google ADK or Google Managed Agent Runtime in this architecture. The backend implementation remains private.
 
 ## Repository contents
 
